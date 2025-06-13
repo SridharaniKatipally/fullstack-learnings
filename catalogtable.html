@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Catalog</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 8px;
+      text-align: left;
+    }
+    thead {
+      background-color: #f0f0f0;
+    }
+    tfoot {
+      background-color: #ddd;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Book Catalog</h1>
+
+  <table>
+    <!-- Table Head -->
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Publication Year</th>
+      </tr>
+    </thead>
+
+    <!-- Table Body -->
+    <tbody>
+      <tr>
+        <td>The Great Gatsby</td>
+        <td>F. Scott Fitzgerald</td>
+        <td>Classic</td>
+        <td>1925</td>
+      </tr>
+      <tr>
+        <td>1984</td>
+        <td>George Orwell</td>
+        <td>Dystopian</td>
+        <td>1949</td>
+      </tr>
+      <tr>
+        <td>To Kill a Mockingbird</td>
+        <td>Harper Lee</td>
+        <td>Fiction</td>
+        <td>1960</td>
+      </tr>
+      <tr>
+        <td>Harry Potter and the Sorcerer's Stone</td>
+        <td>J.K. Rowling</td>
+        <td>Fantasy</td>
+        <td>1997</td>
+      </tr>
+      <tr>
+        <td>The Hobbit</td>
+        <td>J.R.R. Tolkien</td>
+        <td>Fantasy</td>
+        <td>1937</td>
+      </tr>
+    </tbody>
+
+    <!-- Table Footer -->
+    <tfoot>
+      <tr>
+        <td colspan="4">Total Books: 5</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form id="survey-form">
+        <div class="form-group">
+      <label id="name-label" for="name">Full Name:</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        required 
+        placeholder="Enter your name"
+      />
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email">Email Address:</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        required 
+        placeholder="Enter your email"
+      />
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="number">Age:</label>
+      <input 
+        type="number" 
+        id="number" 
+        name="age" 
+        min="10" 
+        max="99" 
+        placeholder="Enter your age"
+      />
+    </div>
+    <div class="form-group">
+      <label for="dropdown">How did you hear about us?</label>
+      <select id="dropdown" name="source">
+        <option value="">--Please choose an option--</option>
+        <option value="social">Social Media</option>
+        <option value="friend">Friend/Family</option>
+        <option value="ads">Online Ads</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Would you recommend us to others?</label>
+      <input type="radio" id="recommend-yes" name="recommend" value="yes" />
+      <label for="recommend-yes">Yes</label>
+      <input type="radio" id="recommend-no" name="recommend" value="no" />
+      <label for="recommend-no">No</label>
+    </div>
+
+    <div class="form-group">
+      <label>What services did you use? (Select all that apply)</label>
+      <input type="checkbox" id="service1" name="services" value="delivery" />
+      <label for="service1">Delivery</label>
+      <input type="checkbox" id="service2" name="services" value="support" />
+      <label for="service2">Customer Support</label>
+      <input type="checkbox" id="service3" name="services" value="installation" />
+      <label for="service3">Installation</label>
+    </div>
+
+    <div class="form-group">
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit">Submit</button>
+    </div> 
+      </form>
+    </header>
+  </body>
+</html>
