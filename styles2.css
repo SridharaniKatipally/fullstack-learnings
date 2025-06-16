@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list li {
+  margin-bottom: 20px;
+}
+.sub-item-link {
+  text-decoration: none;
+  color: #007BFF; /* default link color */
+}
+
+/* Visited links */
+.sub-item-link:visited {
+  color: #6c757d;
+}
+
+/* Hover state */
+.sub-item-link:hover {
+  color: #28a745;
+}
+
+/* Active (click) state */
+.sub-item-link:active {
+  color: #dc3545;
+}
+
+/* Focus state for accessibility */
+.sub-item-link:focus {
+  outline: 2px solid #ffc107;
+}
