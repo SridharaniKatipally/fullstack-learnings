@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promo Video Demo</title>
+
+  <!-- Simple styling so the player is centered on the page -->
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #f7f7f7;
+    }
+    h1 {
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Promo Video Demo</h1>
+
+  <!-- video player -->
+  <video
+    id="promo"
+    width="720"
+    poster="poster.jpg"
+    preload="metadata"
+    controls
+    playsinline>
+    <!-- two formats for maximum browser support -->
+    <source src="promo.mp4"  type="video/mp4">
+    <source src="promo.webm" type="video/webm">
+
+    <!-- multilingual subtitles -->
+    <track kind="subtitles" srclang="es" label="Español" src="promo_es.vtt" default>
+    <track kind="subtitles" srclang="de" label="Deutsch" src="promo_de.vtt">
+
+    <!-- fallback text if nothing plays -->
+    Sorry, your browser can’t play this video.  
+    <a href="promo.mp4">Download it here.</a>
+  </video>
+
+  <!-- JavaScript: simple console logs for demo -->
+  <script>
+    const promo = document.getElementById('promo');
+
+    promo.addEventListener('play',   () => {
+      console.log('Started');
+    });
+
+    promo.addEventListener('pause',  () => {
+      console.log('Paused at', promo.currentTime.toFixed(1), 'seconds');
+    });
+
+    promo.addEventListener('ended',  () => {
+      console.log('Ended');
+    });
+  </script>
+</body>
+</html>
